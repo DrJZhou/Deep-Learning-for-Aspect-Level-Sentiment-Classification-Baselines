@@ -1,0 +1,24 @@
+train sample numbers: 1978
+train average target number/sample: 1.82103134479
+train total target number: 1191
+train average target length: 2.07220822838
+train average sample length: 16.2856420627
+train negative,neutral,positive number: 805,633,2164; rate: 0.223486951694,0.175735702388,0.600777345919
+train top 10 aspects: food:360;service:225;prices:63;place:59;dinner:56;staff:55;menu:55;pizza:51;atmosphere:46;price:41;
+----------------------------------------
+test sample numbers: 600
+test average target number/sample: 1.86666666667
+test total target number: 520
+test average target length: 1.99423076923
+test average sample length: 15.415
+test negative,neutral,positive number: 196,196,728; rate: 0.175,0.175,0.65
+test top 10 aspects: food:125;service:74;menu:22;atmosphere:21;staff:21;place:19;prices:18;meal:14;sushi:14;drinks:13;
+----------------------------------------
+train+test sample numbers: 2578
+train+test average target number/sample: 1.83165244375
+train+test total target number: 1523
+train+test average target length: 2.14576493762
+train+test average sample length: 16.0830100853
+train+test negative,neutral,positive number: 1001,829,2892; rate: 0.211986446421,0.17556120288,0.612452350699
+train+test top 10 aspects: food:485;service:299;prices:81;place:78;menu:77;staff:76;atmosphere:67;dinner:63;pizza:59;meal:54;
+----------------------------------------

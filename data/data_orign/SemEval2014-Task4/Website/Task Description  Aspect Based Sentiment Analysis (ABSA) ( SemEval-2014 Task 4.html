@@ -1,0 +1,361 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" xml:lang="en" lang="en-US"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Task Description: Aspect Based Sentiment Analysis (ABSA) &lt; SemEval-2014 Task 4</title>
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="Task%20Description%20%20Aspect%20Based%20Sentiment%20Analysis%20(ABSA)%20(%20SemEval-2014%20Task%204_files/style.css" type="text/css" media="screen">
+</head>
+<body id="index">
+<div id="bhm-main">
+	<div class="cleared reset-box"></div>
+	<div class="bhm-box bhm-sheet">
+		<div class="bhm-box-body bhm-sheet-body">
+		<div class="bhm-bar bhm-nav">
+		<div class="bhm-nav-outer">
+		<ul class="bhm-hmenu">
+		<li class="current  index"><a href="http://alt.qcri.org/semeval2014/task4/" title="Task Description: Aspect Based Sentiment Analysis (ABSA)">Home</a></li>
+<li class="data-and-tools"><a href="http://alt.qcri.org/semeval2014/task4/index.php?id=data-and-tools" title="Data and Tools">Data and Tools</a></li>
+<li class="important-dates"><a href="http://alt.qcri.org/semeval2014/task4/index.php?id=important-dates" title="Important Dates">Important Dates</a></li>
+<li class="contact"><a href="http://alt.qcri.org/semeval2014/task4/index.php?id=contact" title="Contact">Contact</a></li>
+<li class="google-group"><a href="http://alt.qcri.org/semeval2014/task4/index.php?id=google-group" title="Google Group">Google Group</a></li>
+<li class="call-for-participation"><a href="http://alt.qcri.org/semeval2014/task4/index.php?id=call-for-participation" title="Call For Participation">CFP</a></li>
+		</ul></div></div>
+		<div class="cleared reset-box"></div>
+		<div class="bhm-header">
+		<div class="bhm-logo">
+		<h1 class="bhm-logo-name"><a href="#">SemEval-2014 Task 4</a></h1>
+		<h2 class="bhm-logo-text"></h2>
+		</div>                
+		</div>		
+		<div class="cleared reset-box"></div>
+		<div class="bhm-layout-wrapper">
+			<div class="bhm-content-layout">
+			<div class="bhm-content-layout-row">
+			<div class="bhm-layout-cell bhm-content">
+			<div class="bhm-box bhm-post">
+			<div class="bhm-box-body bhm-post-body">
+			<div class="bhm-post-inner bhm-article">
+			<h2 class="bhm-postheader">Task Description: Aspect Based Sentiment Analysis (ABSA)</h2>
+			<div class="bhm-postheadericons bhm-metadata-icons">
+
+			</div>
+			<div class="bhm-postcontent">
+			<p style="text-align: justify; ">
+	&nbsp;</p>
+<p style="text-align: justify; ">
+	Sentiment analysis is increasingly viewed as a vital task both from an 
+academic and a commercial standpoint. The majority of current 
+approaches, however, attempt to detect the overall polarity of a 
+sentence, paragraph, or text span, regardless of the entities mentioned 
+(e.g., laptops, restaurants) and their aspects (e.g., battery, screen; 
+food, service). By contrast, this task is concerned with aspect based 
+sentiment analysis (ABSA), where the goal is to identify the aspects of 
+given target entities and the sentiment expressed towards each aspect. 
+Datasets consisting of customer reviews with human-authored annotations 
+identifying the mentioned aspects of the target entities and the 
+sentiment polarity of each aspect will be provided.</p>
+<p style="text-align: justify; ">
+	&nbsp;</p>
+<p style="text-align: justify; ">
+	In particular, the task consists of the following subtasks:</p>
+<p style="text-align: justify; ">
+	<br>
+	<strong>Subtask 1: <em>Aspect term extraction</em> </strong></p>
+<p style="text-align: justify; ">
+	Given a set of sentences with pre-identified entities (e.g., 
+restaurants), identify the aspect terms present in the sentence and 
+return a list containing all the distinct aspect terms. An aspect term 
+names a particular aspect of the target entity.</p>
+<p style="text-align: justify; ">
+	&nbsp;</p>
+<p style="text-align: justify; ">
+	For example, "I liked the <em>service</em> and the <em>staff</em>, but not the <em>food</em>”, “The <em>food</em> was nothing much, but I loved the <em>staff</em>”. Multi-word aspect terms (e.g., “hard disk”) should be treated as single terms (e.g., in “The <em>hard disk</em> is very noisy” the only aspect term is “hard disk”).<br>
+	<br>
+	<strong> Subtask 2: <em>Aspect term polarity</em></strong></p>
+<p style="text-align: justify; ">
+	For a given set of aspect terms within a sentence, determine whether 
+the polarity of each aspect term is positive, negative, neutral or 
+conflict (i.e., both positive and negative).</p>
+<p style="text-align: justify; ">
+	&nbsp;</p>
+<p style="text-align: justify; ">
+	For example:</p>
+<p style="text-align: justify; ">
+	“I loved their <strong>fajitas</strong>” → {fajitas: <em>positive</em>}<br>
+	“I hated their <strong>fajitas</strong>, but their <strong>salads</strong> were great” → {fajitas: <em>negative</em>, salads: <em>positive</em>}<br>
+	“The <strong>fajitas</strong> are their first plate” → {fajitas: <em>neutral</em>}<br>
+	“The <strong>fajitas</strong> were great to taste, but not to see” → {fajitas: <em>conflict</em>}<br>
+	<br>
+	<strong> Subtask 3: <em>Aspect category detection</em></strong></p>
+<p style="text-align: justify; ">
+	Given a predefined set of aspect categories (e.g., price, food), 
+identify the aspect categories discussed in a given sentence. Aspect 
+categories are typically coarser than the aspect terms of Subtask 1, and
+ they do not necessarily occur as terms in the given sentence.</p>
+<p style="text-align: justify; ">
+	&nbsp;</p>
+<p style="text-align: justify; ">
+	For example, given the set of aspect categories <strong>{food, service, price, ambience, anecdotes/miscellaneous}</strong>:</p>
+<p style="text-align: justify; ">
+	“The restaurant was too expensive”&nbsp; → <strong>{price}</strong><br>
+	“The restaurant was expensive, but the menu was great” → <strong>{price, food}</strong><br>
+	<br>
+	<strong> Subtask 4: <em>Aspect category polarity</em></strong></p>
+<p style="text-align: justify; ">
+	Given a set of pre-identified aspect categories (e.g., <strong>{food, price}</strong>), determine the polarity (<em>positive</em>, <em>negative</em>, <em>neutral</em> or <em>conflict</em>) of each aspect category.</p>
+<p style="text-align: justify; ">
+	&nbsp;</p>
+<p style="text-align: justify; ">
+	For example:</p>
+<p style="text-align: justify; ">
+	“The restaurant was too expensive” → <strong>{price: negative}</strong><br>
+	“The restaurant was expensive, but the menu was great” → <strong>{price: negative, food: positive}</strong></p>
+<p style="text-align: justify; ">
+	&nbsp;</p>
+<p style="text-align: justify; ">
+	<strong>Datasets</strong>:</p>
+<p>
+	Two domain-specific datasets for laptops and restaurants, consisting of
+ over 6K sentences with fine-grained aspect-level human annotations have
+ been provided for training.</p>
+<p>
+	&nbsp;</p>
+<p>
+	<em>Restaurant reviews</em>:</p>
+<p>
+	This dataset consists of over 3K English sentences from the restaurant 
+reviews of Ganu et al. (2009). The original dataset of Ganu et al. 
+included annotations for coarse aspect categories (Subtask 3) and 
+overall sentence polarities; we modified the dataset to include 
+annotations for aspect terms occurring in the sentences (Subtask 1), 
+aspect term polarities (Subtask 2), and aspect category-specific 
+polarities (Subtask 4). We also corrected some errors (e.g., sentence 
+splitting errors) of the original dataset. Experienced human annotators 
+identified the aspect terms of the sentences and their polarities 
+(Subtasks 1 and 2).&nbsp;Additional restaurant reviews, not in the 
+original dataset of Ganu et al. (2009), are being annotated in the same 
+manner, and they will be used as test data.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<em>Laptop reviews</em>:</p>
+<p>
+	This dataset consists of over 3K English sentences extracted from 
+customer reviews of laptops. Experienced human annotators tagged the 
+aspect terms of the sentences (Subtask 1) and their polarities (Subtask 
+2). This dataset will be used only for Subtasks 1 and 2. Part of this 
+dataset will be reserved as test data.&nbsp;</p>
+<p>
+	&nbsp;</p>
+<p>
+	<strong>Dataset format:</strong></p>
+<p>
+	The sentences in the datasets are annotated using XML tags.</p>
+<p>
+	The following example illustrates the format of the annotated sentences of the restaurants dataset.</p>
+<p>
+	&nbsp;</p>
+<p>
+	&lt;sentence id="813"&gt;<br>
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;text&gt;All
+ the appetizers and salads were fabulous, the steak was mouth watering 
+and the pasta was delicious!!!&lt;/text&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectTerms&gt;<br>
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectTerm
+ term="appetizers" polarity="positive" from="8" to="18"/&gt;<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&lt;aspectTerm term="salads" polarity="positive" from="23" to="29"/&gt;<br>
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectTerm
+ term="steak" polarity="positive" from="49" to="54"/&gt;<br>
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectTerm
+ term="pasta" polarity="positive" from="82" to="87"/&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/aspectTerms&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectCategories&gt;<br>
+	&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectCategory
+ category="food" polarity="positive"/&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/aspectCategories&gt;<br>
+	&lt;/sentence&gt;</p>
+<p>
+	&nbsp;</p>
+<p>
+	The possible values of the polarity field are: “positive”, “negative”, 
+“conflict”, “neutral”. The possible values of the category field are: 
+“food”, “service”, “price”, “ambience”, “anecdotes/miscellaneous”.</p>
+<p>
+	&nbsp;</p>
+<p>
+	The following example illustrates the format of the annotated sentences
+ of the laptops dataset. The format is the same as in the restaurant 
+datasets, with the only exception that there are no annotations for 
+aspect categories. Notice that we annotate only aspect terms naming 
+particular aspects (e.g., “everything about it” does not name a 
+particular aspect).</p>
+<p>
+	&nbsp;</p>
+<p>
+	&lt;sentence id="353"&gt;<br>
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;text&gt;From
+ the build quality to the performance, everything about it has been 
+sub-par from what I would have expected from Apple.&lt;/text&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectTerms&gt;<br>
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectTerm
+ term="build quality" polarity="negative" from="9" to="22"/&gt;<br>
+	
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;aspectTerm
+ term="performance" polarity="negative" from="30" to="41"/&gt;<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/aspectTerms&gt;<br>
+	&lt;/sentence&gt;</p>
+<p>
+	&nbsp;</p>
+<p>
+	In the sentences of both datasets, there is an &lt;aspectTerm … /&gt; 
+element for each occurrence of an aspect term. For example, if the 
+previous sentence contained two occurrences of the aspect term 
+“performance”, there would be two &lt;aspectTerm … /&gt; elements, which
+ would be identical if both occurrences had negative polarity. If a 
+sentence has no aspect terms, there is no &lt;aspectTerms&gt; … 
+&lt;/aspectTerms&gt; element in its annotations, and similarly for the 
+aspect categories in the restaurants dataset.</p>
+<p>
+	&nbsp;</p>
+<p>
+	Please, note that:</p>
+<ol>
+	<li>
+		<em>Any quote within an aspect term (e.g., "sales" team) has been replaced with&nbsp;<strong>&amp;quot;&nbsp;</strong>(the text and the offsets remain the same),&nbsp;e.g., &lt;aspectTerm term="&amp;quot;sales&amp;quot; team" .../&gt;.</em></li>
+	<li>
+		<em>The sentences may contain spelling mistakes. The identified aspect
+ terms should be returned as they appear in the sentences, even if 
+misspelled (e.g.,&nbsp;</em><em>"warranty" as "warrenty"</em><em>).</em></li>
+	<li>
+		<em>For each aspect term of the training data we include two attributes ("from and "to") that indicate&nbsp;</em><em>its start and end offset in the text (e.g., &lt;aspectTerm term="staff" polarity="negative" from="8" to="13"/&gt;).</em></li>
+</ol>
+<p>
+	<strong>Evaluation</strong>:</p>
+<p>
+	Details of the evaluation measures will become available in due time.</p>
+<p>
+	All participating teams have been provided with annotated training data
+ (sentences from the two datasets) in the format discussed above, to 
+train their systems. During the SemEval evaluation phase, unlabeled test
+ data will be provided. Similar to previous SemEval Sentiment Analysis 
+tasks, each team may submit two runs:</p>
+<ul>
+	<li>
+		<strong>Constrained</strong> - using only the provided training data and other resources, such as lexicons</li>
+	<li>
+		<strong>Unconstrained</strong> - using additional data for training. Teams will be asked to report what resources they used for each submitted run.<br>
+		&nbsp;</li>
+</ul>
+<p>
+	<strong>References</strong>:</p>
+<p>
+	G. Ganu, N. Elhadad, and A. Marian, “Beyond the stars: Improving rating
+ predictions using review text content”. Proceedings of the 12th 
+International Workshop on the Web and Databases, Providence, Rhode 
+Island, 2009.<br>
+	M. Hu and B. Liu, “Mining and summarizing customer reviews”. Proceedings of the 10th KDD, pp. 168–177, Seattle, WA, 2004.<br>
+	S.-M. Kim and E. Hovy, “Extracting opinions, opinion holders, and 
+topics expressed in online news media text”. Proceedings of the Workshop
+ on Sentiment and Subjectivity in Text, pp. 1– 8, Sydney, Australia, 
+2006.<br>
+	B. Liu, Sentiment Analysis and Opinion Mining. Synthesis Lectures on Human Language Technologies. Morgan &amp; Claypool, 2012.<br>
+	S. Moghaddam and M. Ester, “Opinion digger: an unsupervised opinion 
+miner from unstructured product reviews”. Proceedings of the 19th CIKM, 
+pp. 1825–1828, Toronto, ON, 2010.<br>
+	M. Tsytsarau and T. Palpanas. “Survey on mining subjective data on the 
+web”. Data Mining and Knowledge Discovery, 24(3):478–514, 2012.<br>
+	Z. Zhai, B. Liu, H. Xu, and P. Jia. “Clustering product features for 
+opinion mining”.&nbsp; Proceedings of the 4th International Conference 
+of WSDM, pp. 347–354, Hong Kong, 2011.<br>
+	S. Brody and N. Elhadad. “An unsupervised aspect-sentiment model for 
+online reviews”. Proceedings of NAACL, pages 804–812, Los Angeles, CA, 
+2010.<br>
+	&nbsp;</p>
+			</div>
+			<div class="cleared"></div>
+			<div class="bhm-postfootericons bhm-metadata-icons">
+			<span class="bhm-postcategoryicon"></span></div>
+			</div><div class="cleared"></div>
+			</div></div><div class="cleared"></div></div>
+			<div class="bhm-layout-cell bhm-sidebar1">						
+			<!------>
+				<div class="bhm-box bhm-block">
+				<div class="bhm-box-body bhm-block-body">
+				<div class="bhm-bar bhm-blockheader">
+				<h3 class="t">Contact Info</h3>
+				</div>
+					<div class="bhm-box bhm-blockcontent">
+					<div class="bhm-box-body bhm-blockcontent-body">
+					<div>
+					<h4>Organizers</h4>
+<br>
+<ul>
+	<li><a href="http://www.aueb.gr/users/ion/">Ion Androutsopoulos</a> (Athens University of Economics and Business, Greece)</li>
+	<li><a href="http://www.ilsp.gr/en/profile/staff?view=member&amp;task=show&amp;id=116">Dimitris Galanis</a> (“Athena” Research Center, Greece)</li>
+	<li><a href="http://www.cs.york.ac.uk/~suresh">Suresh Manandhar</a> (University of York, UK) <strong>[Primary Contact]</strong></li>
+	<li><a href="http://www.ilsp.gr/en/profile/staff?view=member&amp;task=show&amp;id=49">Harris Papageorgiou</a> ("Athena" Research Center, Greece)</li>
+	<li><a href="http://nlp.cs.aueb.gr/people.html">John Pavlopoulos</a> (Athens University of Economics and Business, Greece)</li>
+	<li><a href="http://www.ilsp.gr/en/profile/staff?view=member&amp;task=show&amp;id=114">Maria Pontiki</a> (“Athena” Research Center, Greece)</li>
+</ul>
+
+<br> 
+<b>email:</b>
+<i>semeval-absa@googlegroups.com </i>
+					</div>
+					<div class="cleared"></div></div></div>
+					<div class="cleared"></div></div></div>
+				<div class="bhm-box bhm-block">
+				<div class="bhm-box-body bhm-block-body">
+				<div class="bhm-bar bhm-blockheader">
+				<h3 class="t">Other Info</h3></div>
+				<div class="bhm-box bhm-blockcontent">
+				<div class="bhm-box-body bhm-blockcontent-body"><div>
+				<h4>Announcements</h4>
+<br>
+<ul>
+  <li><a href="http://alt.qcri.org/semeval2014/task4/data/uploads/se2014_absa_submissions.xlsx">Official results</a></li><a href="http://alt.qcri.org/semeval2014/task4/data/uploads/se2014_absa_submissions.xlsx">
+  </a><li><a href="http://alt.qcri.org/semeval2014/task4/data/uploads/se2014_absa_submissions.xlsx"></a><a href="http://alt.qcri.org/semeval2014/task4/data/uploads/submission-guidelines.pdf">Submission guidelines</a> are available!</li>
+  <li>Baselines, evaluation and validation code are available!</li>
+  <li>Annotation guidelines are available</li>
+  <li>Train data with minor corrections are now available</li>
+  <li>Train data released!</li>
+  <li>Join our <a href="https://groups.google.com/forum/#%21forum/semeval-absa">Google group</a>!</li>
+  <li>Trial data released!</li>
+</ul>				</div><div class="cleared"></div></div></div>
+				<div class="cleared"></div></div></div>                
+				<div class="cleared"></div>
+                                
+                                <div class="bhm-box bhm-block">
+				<div class="bhm-box-body bhm-block-body">
+				<div class="bhm-bar bhm-blockheader">
+				<h3 class="t">Last updated on</h3></div>
+				<div class="bhm-box bhm-blockcontent">
+				<div class="bhm-box-body bhm-blockcontent-body"><div>
+				12/5/2014				</div><div class="cleared"></div></div></div>
+				<div class="cleared"></div></div></div>                
+				<div class="cleared"></div>
+			<!----->
+		<div class="cleared"></div>
+		</div></div></div></div>
+		<div class="cleared"></div>
+		<div class="bhm-footer">
+		<div class="bhm-footer-body">
+		<div class="bhm-footer-text">
+		Copyright 2018 - <strong>SemEval-2014 Task 4. All Right Reserved
+		</strong></div><strong>
+		<div class="cleared"></div>
+		</strong></div></div><div class="cleared"></div></div></div><strong>
+	<div class="cleared"></div>
+	<!-- Please don't remove this link -->
+	<p class="bhm-page-footer">Designed by <a href="http://www.balinesehandmade.com/">BhMad Studio</a> &nbsp;|&nbsp; <a href="http://get-simple.info/">Powered by  GetSimple</a></p>
+	<!-- end -->
+	<div class="cleared"></div>
+</strong></div></body></html>

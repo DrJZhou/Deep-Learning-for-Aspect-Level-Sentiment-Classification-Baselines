@@ -1,0 +1,24 @@
+train sample numbers: 1462
+train average target number/sample: 1.58207934337
+train total target number: 939
+train average target length: 1.9190628328
+train average sample length: 18.585499316
+train negative,neutral,positive number: 866,460,987; rate: 0.374405533939,0.19887591872,0.426718547341
+train top 10 aspects: screen:60;price:56;use:53;battery life:52;keyboard:50;battery:47;programs:37;features:35;software:33;warranty:31;
+----------------------------------------
+test sample numbers: 411
+test average target number/sample: 1.55231143552
+test total target number: 389
+test average target length: 1.94344473008
+test average sample length: 14.9562043796
+test negative,neutral,positive number: 128,169,341; rate: 0.200626959248,0.264890282132,0.534482758621
+test top 10 aspects: performance:15;price:15;works:14;os:13;features:11;windows 8:11;use:9;screen:9;size:8;keyboard:7;
+----------------------------------------
+train+test sample numbers: 1873
+train+test average target number/sample: 1.5755472504
+train+test total target number: 1170
+train+test average target length: 2.00769230769
+train+test average sample length: 17.7891083823
+train+test negative,neutral,positive number: 994,629,1328; rate: 0.336834971196,0.213148085395,0.450016943409
+train+test top 10 aspects: price:71;screen:69;use:62;battery life:58;keyboard:57;battery:53;features:46;performance:38;programs:37;software:37;
+----------------------------------------
