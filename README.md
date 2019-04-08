@@ -1,7 +1,7 @@
 # Deep-Learning-for-Aspect-Level-Sentiment-Classification-Baselines
 The public state-of-the-art methods for deep learning based ASC
 
-# Authors
+## Authors
  - Jie Zhou;Jimmy Huang;Qin Chen, Tingting Wang, Qinmin Vivian Hu, and Liang He
 
 ## Environmental Requirement
@@ -12,10 +12,10 @@ The public state-of-the-art methods for deep learning based ASC
 
 ## Introduction of this work
 ### models/  The deep learning model for ASC
- - ContextAvg: the average of the word embeddings is fed to a softmax layer for sentiment prediction, which was adopted as a baseline in \cite{tang2016aspect}.
- - AEContextAvg: the concatenation of the average of the word embeddings and the average of the aspect vectors is fed to a softmax layer for sentiment prediction, which was adopted as a baseline in \cite{tang2016aspect}.
- - LSTM: the last hidden vector obtained by LSTM  \cite{hochreiter1997long} is used for sentence representation and sentiment prediction. 
- - GRU: the last hidden vector obtained by GRU \cite{bahdanau2014neural} is used for sentence representation and sentiment prediction.
+ - ContextAvg: the average of the word embeddings is fed to a softmax layer for sentiment prediction, which was adopted as a baseline in [1].
+ - AEContextAvg: the concatenation of the average of the word embeddings and the average of the aspect vectors is fed to a softmax layer for sentiment prediction, which was adopted as a baseline in [1].
+ - LSTM: the last hidden vector obtained by LSTM [2] is used for sentence representation and sentiment prediction. 
+ - GRU: the last hidden vector obtained by GRU [3] is used for sentence representation and sentiment prediction.
  - BiLSTM: the concatenation of last hidden vectors obtained by BiLSTM is used for sentence representation and sentiment prediction.
  - BiGRU: the concatenation of last hidden vectors obtained by BiGRU is used for sentence representation and sentiment prediction.
  - TD-LSTM: a target-dependent LSTM model which modeled the preceding and following contexts surrounding the target for sentiment classification \cite{tang2016effective}.
@@ -58,6 +58,11 @@ The public state-of-the-art methods for deep learning based ASC
  - ans: Store the answer of the models
  - attention_weight: Store the weight of the attentions.
 
+## References
+[1] Tang D, Qin B, Liu T. Aspect Level Sentiment Classification with Deep Memory Network[C]//Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing. 2016: 214-224.
+[2] Hochreiter S, Schmidhuber J. Long short-term memory[J]. Neural computation, 1997, 9(8): 1735-1780.
+[3] Bahdanau D, Cho K, Bengio Y. Neural machine translation by jointly learning to align and translate[J]. arXiv preprint arXiv:1409.0473, 2014.
+[4] Tang D, Qin B, Feng X, et al. Effective LSTMs for Target-Dependent Sentiment Classification[C]//Proceedings of COLING 2016, the 26th International Conference on Computational Linguistics: Technical Papers. 2016: 3298-3307.
 
 ## Contacts
 - jzhou@ica.stc.sh.cn
