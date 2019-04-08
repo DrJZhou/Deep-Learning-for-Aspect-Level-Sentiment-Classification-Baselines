@@ -14,7 +14,7 @@ All the codes and datasets for ASC will be released later.
 - numpy
 
 ## Introduction of this work
-### models/  The deep learning model for ASC
+### models/:  The deep learning model for ASC
  - ContextAvg: the average of the word embeddings is fed to a softmax layer for sentiment prediction, which was adopted as a baseline in [1].
  - AEContextAvg: the concatenation of the average of the word embeddings and the average of the aspect vectors is fed to a softmax layer for sentiment prediction, which was adopted as a baseline in [1].
  - LSTM: the last hidden vector obtained by LSTM [2] is used for sentence representation and sentiment prediction. 
@@ -38,12 +38,12 @@ All the codes and datasets for ASC will be released later.
  - MemNet: the content and position of the aspect is incorporated into a deep memory network [10].
  - RAM: a multi-layer architecture where each layer contains an attention-based aggregation of word features and a GRU cell to learn the sentence representation [11]. 
  - CABASC: two novel attention mechanisms, namely sentence-level content attention mechanism and context attention mechanism are introduced in a memory network to tackle the semantic-mismatch problem [12].
-### data/  Store the data
+### data/:  Store the data
  - data_orign: the original datasets, including SemEval2014-Task4, SemEval2015-Task12, SemEval2016-Task5, Twitter, Sentihood, Michell, MPQA.
  - data_processed: the datasets after processing
  - store: Store the embedding of words, like GloVe.
  - tmp: store the temporary files.
-### data_processing/  Processing the data
+### data_processing/:  Processing the data
  - SemEval2014-Laptop: Processe the Laptop14 dataset.
  - SemEval2014-Resturant: Process the Restaurants14 dataset.
  - SemEval2015-Resturant: Process the Restaurants15 dataset.
@@ -52,11 +52,11 @@ All the codes and datasets for ASC will be released later.
  - MPQA: Process the MPQA dataset.
  - Michell-en: Process the Michell-en dataset.
  - Sentihood: Process the Sentihood dataset.
-### layers/ Basic units of deep learning models
+### layers/: Basic units of deep learning models
  - Attention: Attention units, including ''Contact Attention", ''General Attention" and ''Dot-Product Attention".
  - Dynamic_RNN: Basic RNN, LSTM and GRU models.
  - SqueezeEmbedding: Squeeze the embeddings of words.
-### results/ Store the results
+### results/: Store the results
  - log: Store the log of the models.
  - ans: Store the answer of the models
  - attention_weight: Store the weight of the attentions.
