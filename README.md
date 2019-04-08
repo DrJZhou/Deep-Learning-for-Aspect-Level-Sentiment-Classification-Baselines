@@ -60,6 +60,7 @@ All the codes and datasets for ASC will be released later.
  - log: Store the log of the models.
  - ans: Store the answer of the models
  - attention_weight: Store the weight of the attentions.
+ - model: Store the trained models.
 
 ## References
 [1] Tang D, Qin B, Liu T. Aspect Level Sentiment Classification with Deep Memory Network[C]//Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing. 2016: 214-224.<br>
