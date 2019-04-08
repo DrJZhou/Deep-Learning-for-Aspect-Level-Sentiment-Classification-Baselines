@@ -62,6 +62,52 @@ All the codes and datasets for ASC will be released later.
  - attention_weight: Store the weight of the attentions.
  - model: Store the trained models.
 
+## Statics of the performance of the existing works for deep learning based ASC
+|            Method           | Restaurants14 |          | Laptop14 |          | Restaurants15 |          | Restaurants16 |          |  Twitter |          |
+|:---------------------------:|:-------------:|:--------:|:--------:|:--------:|:-------------:|:--------:|:-------------:|:--------:|:--------:|:--------:|
+|                             |    Accuracy   | Marco-F1 | Accuracy | Marco-F1 |    Accuracy   | Marco-F1 |    Accuracy   | Marco-F1 | Accuracy | Marco-F1 |
+|        RecNN for ASC        |               |          |          |          |               |          |               |          |          |          |
+|            AdaRNN           |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |   66.30  |   65.90  |
+|          PhraseRNN          |     66.20     |     -    |     -    |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|         RNN for ASC         |               |          |          |          |               |          |               |          |          |          |
+|             GRNN            |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|           TD-LSTM           |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |   70.80  |   69.00  |
+|           TC-LSTM           |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |   71.50  |   69.50  |
+|           AE-LSTM           |     76.60     |     -    |   68.90  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|            H-LSTM           |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+| Attention-based RNN for ASC |               |          |          |          |               |          |               |          |          |          |
+|          ATAE-LSTM          |     77.20     |     -    |   68.70  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|           AB-LSTM           |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |   72.60  |   72.20  |
+|         BILSTM-ATT-G        |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |   73.60  |   72.10  |
+|             IAN             |     78.60     |     -    |   72.10  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|        AF-LSTM(CONV)        |     75.44     |     -    |   68.81  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|             HEAT            |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|      Sentic LSTM+TA+SA      |       -       |     -    |     -    |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|          PRET+MULT          |     79.11     |   79.73  |   71.15  |   67.46  |     81.30     |   68.74  |     85.58     |   79.76  |     -    |     -    |
+|             PBAN            |     81.16     |     -    |   74.12  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|      LSTM+SynATT+TarRep     |     80.63     |   71.32  |   71.94  |   69.23  |     81.67     |   66.05  |     84.61     |   67.45  |     -    |     -    |
+|             MGAN            |     81.25     |   71.94  |   75.39  |   72.47  |       -       |     -    |       -       |     -    |   72.54  |   70.81  |
+|  Inter-Aspect Dependencies  |     79.00     |     -    |   72.50  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|           AOA-LSTM          |     81.20     |     -    |   74.50  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|           LCR-Rot           |     81.34     |     -    |   75.24  |     -    |       -       |     -    |       -       |     -    |   72.69  |     -    |
+|    Word\&Clause-Level ATT   |       -       |     -    |     -    |     -    |     80.90     |   68.50  |       -       |     -    |     -    |     -    |
+|         CNN for ASC         |               |          |          |          |               |          |               |          |          |          |
+|             GCAE            |     77.28     |     -    |   69.14  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|            PF-CNN           |     79.20     |     -    |   70.06  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|         Conv-Memnet         |     78.26     |   68.38  |   76.37  |   72.10  |       -       |     -    |       -       |     -    |   72.11  |   70.80  |
+|             TNet            |     80.69     |   71.27  |   76.54  |   71.75  |       -       |     -    |       -       |     -    |   74.97  |   73.60  |
+|    Memory Network for ASC   |               |          |          |          |               |          |               |          |          |          |
+|            MemNet           |     80.95     |     -    |   72.21  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|           DyMemNN           |       -       |   58.82  |     -    |   60.11  |       -       |     -    |       -       |     -    |     -    |     -    |
+|             RAM             |     80.23     |   70.80  |   74.49  |   71.35  |       -       |     -    |       -       |     -    |   69.36  |   73.85  |
+|             CEA             |     80.98     |     -    |   72.88  |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|             DAuM            |     82.32     |   71.45  |   74.45  |   70.16  |       -       |     -    |       -       |     -    |   72.14  |   60.24  |
+|             IARM            |     80.00     |     -    |   73.8   |     -    |       -       |     -    |       -       |     -    |     -    |     -    |
+|             TMNs            |       -       |   68.84  |     -    |   67.23  |       -       |     -    |       -       |     -    |     -    |     -    |
+|            Cabasc           |     80.89     |     -    |   75.07  |     -    |       -       |     -    |       -       |     -    |   71.53  |     -    |
+
+
+
 ## References
 [1] Tang D, Qin B, Liu T. Aspect Level Sentiment Classification with Deep Memory Network[C]//Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing. 2016: 214-224.<br>
 [2] Hochreiter S, Schmidhuber J. Long short-term memory[J]. Neural computation, 1997, 9(8): 1735-1780.<br>
