@@ -12,14 +12,29 @@ The public state-of-the-art methods for deep learning based ASC
 
 ## Introduction of this work
 ### models/  The deep learning model for ASC
- - ContextAvg
- - AEContextAvg
- - LSTM
- - GRU
- - BiLSTM
- - BiGRU
- - TD-LSTM
- - TC-LSTM
+ - ContextAvg: the average of the word embeddings is fed to a softmax layer for sentiment prediction, which was adopted as a baseline in \cite{tang2016aspect}.
+ - AEContextAvg: the concatenation of the average of the word embeddings and the average of the aspect vectors is fed to a softmax layer for sentiment prediction, which was adopted as a baseline in \cite{tang2016aspect}.
+ - LSTM: the last hidden vector obtained by LSTM  \cite{hochreiter1997long} is used for sentence representation and sentiment prediction. 
+ - GRU: the last hidden vector obtained by GRU \cite{bahdanau2014neural} is used for sentence representation and sentiment prediction.
+ - BiLSTM: the concatenation of last hidden vectors obtained by BiLSTM is used for sentence representation and sentiment prediction.
+ - BiGRU: the concatenation of last hidden vectors obtained by BiGRU is used for sentence representation and sentiment prediction.
+ - TD-LSTM: a target-dependent LSTM model which modeled the preceding and following contexts surrounding the target for sentiment classification \cite{tang2016effective}.
+ - TC-LSTM: this model extends TD-LSTM by incorporating an target con- nection component, which explicitly utilizes the connections between target word and each context word when composing the representation of a sentence. \cite{tang2016effective}.
+ - AT-LSTM: it uses an LSTM to model the sentence and a basic attention mechanism is applied for sentence representation and sentiment prediction. \cite{wang2016attention}.
+ - AT-GRU: it uses a GRU to model the sentence and a basic attention mechanism is applied for sentence representation and sentiment prediction. \cite{wang2016attention}.
+ - AT-BiLSTM: it uses a BiLSTM to model the sentence and a basic attention mechanism is applied for sentence representation and sentiment prediction. \cite{wang2016attention}.
+ - AT-BiGRU: it uses a BiGRU to model the sentence and a basic attention mechanism is applied for sentence representation and sentiment prediction. \cite{wang2016attention}.
+ - ATAE-LSTM: the aspect representation is integrated into attention-based LSTM for sentence representation and sentiment prediction \cite{wang2016attention}.
+ - ATAE-GRU: the aspect representation is integrated into attention-based GRU for sentence representation and sentiment prediction.
+ - ATAE-BiLSTM: the aspect representation is integrated into attention-based BiLSTM for sentence representation and sentiment prediction.
+ - ATAE-BiGRU: the aspect representation is integrated into attention-based BiGRU for sentence representation and sentiment prediction.
+ - IAN: the attentions in the context and aspect were learned interactively for context and aspect representation \cite{mainteractive}. 
+ - LCRS: it contains three LSTMs, i.e., left-, center- and right- LSTM, respectively modeling the three parts of a review (left context, aspect and right context) \cite{zheng2018left}.
+ - CNN: The sentence representation obtained by CNN \cite{lecun1995convolutional} is used for ASC.
+ - GCAE: it has two separate convolutional layers on the top of the embedding layer, whose outputs are combined by gating units \cite{xue2018aspect}.
+ - MemNet: the content and position of the aspect is incorporated into a deep memory network \cite{tang2016aspect}.
+ - RAM: a multi-layer architecture where each layer contains an attention-based aggregation of word features and a GRU cell to learn the sentence representation \cite{chen2017recurrent}. 
+ - CABASC: two novel attention mechanisms, namely sentence-level content attention mechanism and context attention mechanism are introduced in a memory network to tackle the semantic-mismatch problem \cite{liu2018content}.
 ### data/  Store the data
  - data_orign: the original datasets, including SemEval2014-Task4, SemEval2015-Task12, SemEval2016-Task5, Twitter, Sentihood, Michell, MPQA.
  - data_processed: the datasets after processing
