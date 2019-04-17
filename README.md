@@ -1,5 +1,5 @@
 # Deep-Learning-for-Aspect-Level-Sentiment-Classification-Baselines
-The public state-of-the-art methods for deep learning based ASC
+The public state-of-the-art methods for deep learning based ASC. This is part of my survey paper "Deep learning for Aspect-level Sentiment Classificiation: Survey, Vision and Challenges".
 
 ## Note
 All the codes and datasets for ASC will be released later.
