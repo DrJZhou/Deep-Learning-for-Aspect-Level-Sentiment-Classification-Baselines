@@ -265,3 +265,6 @@ All the codes and datasets for ASC will be released later.
 
 ## Contacts
 - jzhou@ica.stc.sh.cn
+
+## Node
+Thanks for [code](https://github.com/songyouwei/ABSA-PyTorch) shared by Song, Youwei, we conduct our model based it.
