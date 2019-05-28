@@ -5,7 +5,7 @@ The public state-of-the-art methods for deep learning based ASC. This is part of
 All the codes and datasets for ASC will be released later.
 
 ## Authors
- - Jie Zhou, Jimmy Huang, Qin Chen, Tingting Wang, Qinmin Vivian Hu, and Liang He
+ - Jie Zhou (jzhou@ica.stc.sh.cn), Jimmy Huang (jhuang@yorku.ca), Qin Chen, Tingting Wang, Qinmin Vivian Hu, and Liang He
 
 ## Environmental Requirement
 - Python 3.6
