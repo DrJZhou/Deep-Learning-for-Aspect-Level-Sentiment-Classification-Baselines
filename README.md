@@ -1,8 +1,8 @@
 # Deep-Learning-for-Aspect-Level-Sentiment-Classification-Baselines
-The public state-of-the-art methods for deep learning based ASC. This is part of my survey paper "Deep learning for Aspect-level Sentiment Classificiation: Survey, Vision and Challenges".
+The public state-of-the-art methods for deep learning based ASC. This is part of my survey paper "Deep learning for Aspect-level Sentiment Classification: Survey, Vision and Challenges".
 
 ## Note
-All the codes and datasets for ASC will be released later.
+Click [here](http://ac.ica.stc.sh.cn/papers/ASC_DATA.zip) to download all the ASC datasets (including SemEval 2014, SemEval 2015, SemEval 2016, Twitter, Sentihood, MPQA, Michell and manually-annoted-Hotel).
 
 ## Authors
  - Jie Zhou (jzhou@ica.stc.sh.cn), Jimmy Huang (jhuang@yorku.ca), Qin Chen, Tingting Wang, Qinmin Vivian Hu, and Liang He
