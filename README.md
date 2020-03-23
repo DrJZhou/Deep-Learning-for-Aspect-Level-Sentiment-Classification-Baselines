@@ -6,7 +6,9 @@ Click [here](http://ac.ica.stc.sh.cn/papers/ASC_DATA.zip) to download all the AS
 
 ## Authors
  - Jie Zhou (jzhou@ica.stc.sh.cn), Jimmy Huang (jhuang@yorku.ca), Qin Chen, Tingting Wang, Qinmin Vivian Hu, and Liang He
- If you find this repo useful, please consider citing (no obligation at all):
+ 
+ 
+ - If you find this repo useful, please consider citing (no obligation at all):
  ```
  @article{zhou2019deep,
    title={Deep learning for aspect-level sentiment classification: Survey, vision, and challenges},
