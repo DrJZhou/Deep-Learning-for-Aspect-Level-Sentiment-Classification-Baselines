@@ -7,6 +7,7 @@ Click [here](http://ac.ica.stc.sh.cn/papers/ASC_DATA.zip) to download all the AS
 ## Authors
  - Jie Zhou (jzhou@ica.stc.sh.cn), Jimmy Huang (jhuang@yorku.ca), Qin Chen, Tingting Wang, Qinmin Vivian Hu, and Liang He
  If you find this repo useful, please consider citing (no obligation at all):
+ ```
  @article{zhou2019deep,
    title={Deep learning for aspect-level sentiment classification: Survey, vision, and challenges},
    author={Zhou, Jie and Huang, Jimmy Xiangji and Chen, Qin and Hu, Qinmin Vivian and Wang, Tingting and He, Liang},
@@ -16,7 +17,7 @@ Click [here](http://ac.ica.stc.sh.cn/papers/ASC_DATA.zip) to download all the AS
    year={2019},
    publisher={IEEE}
  }
-
+```
 ## Environmental Requirement
 - Python 3.6
 - Pytorch 0.4.0
