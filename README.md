@@ -2,7 +2,7 @@
 The public state-of-the-art methods for deep learning based ASC. This is part of my survey paper "[Deep learning for Aspect-level Sentiment Classification: Survey, Vision and Challenges](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8726353)".
 
 ## Note
-Click [here](http://ac.ica.stc.sh.cn/papers/ASC_DATA.zip) to download all the ASC datasets (including SemEval 2014, SemEval 2015, SemEval 2016, Twitter, Sentihood, MPQA, Michell and manually-annoted-Hotel).
+Click [here](https://drive.google.com/file/d/1JUP-gHqXwGRqDb3l6dzmbvR-_EtPzm5a/view?usp=sharing) to download all the ASC datasets (including SemEval 2014, SemEval 2015, SemEval 2016, Twitter, Sentihood, MPQA, Michell and manually-annoted-Hotel).
 
 ## Authors
  - Jie Zhou (jzhou@ica.stc.sh.cn), Jimmy Huang (jhuang@yorku.ca), Qin Chen, Tingting Wang, Qinmin Vivian Hu, and Liang He
